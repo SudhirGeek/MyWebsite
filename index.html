@@ -165,7 +165,7 @@
 // 		This function is used to force top scroll on refreshing the page
 		var elmnt = document.getElementById("header");
 		window.onbeforeunload = function(){
-			elmnt.scrollIntoView(true);
+			window.scrollTo(0, 0);
 		}
 		var scroll = new SmoothScroll('a[href*="#"]');
 	</script>
