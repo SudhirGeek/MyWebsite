@@ -162,6 +162,10 @@
 
 	<!-- smooth scroll -->
 	<script>
+// 		This function is used to force top scroll on refreshing the page
+		window.onbeforeunload = function () {
+		  window.scrollTo(0, 0);
+		}
 		var scroll = new SmoothScroll('a[href*="#"]');
 	</script>
 </body>
